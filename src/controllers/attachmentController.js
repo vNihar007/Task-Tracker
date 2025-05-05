@@ -41,8 +41,7 @@ const uploadAttachment = async (req, res) => {
         taskId: task.id
       });
     }
-    
-
+    // socket emits notification to the front end
     return res.status(201).json({ message: "File uploaded", attachment });
   } catch (error) {
     console.error("uploadAttachment error:", error);
