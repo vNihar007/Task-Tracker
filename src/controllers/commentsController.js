@@ -40,8 +40,7 @@ const addComment = async (req, res) => {
         taskId: task.id
       });
     }
-    
-
+    // socket emits notification to the front end
     return res.status(201).json(comment);
   } catch (error) {
     console.error("addComment error:", error);

@@ -57,6 +57,7 @@ const createTask = async (req, res) => {
           taskId: newTask.id
         });
       }
+    // socket emits notification to the front end
       return res.status(201).json({ message: 'Task created successfully', task: newTask });
     } catch (err) {
       console.error('createTask error:', err);

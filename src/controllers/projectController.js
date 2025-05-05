@@ -149,7 +149,7 @@ const addMembertoProject = async (req, res) => {
         message: `You've been added to the project "${project.name}"`,
         projectId: project.id
       });
-      
+      // socket emits notification to the front end
       return res.status(201).json({
         message: `User ${targetUser.name} added to project successfully`,
         member: addedMember
