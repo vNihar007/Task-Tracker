@@ -1,14 +1,13 @@
 # Task Tracker
 
-A RESTful API for managing tasks and tracking their progress, built with Node.js, Express, PostgreSQL, and Prisma ORM.
+An scalable RESTful API built on js  for efficient task management and productivity tracking. Leveraging the power of Node.js, Express, PostgreSQL (containerized with Podman), and Prisma ORM for type-safe database operations.
 
 ## Features
 
 - Create, read, update, and delete tasks
 - Mark tasks as completed/incomplete
-- Filter tasks by status, priority, or due date
 - User authentication and authorization
-- Task categorization and tagging
+- Real-time Notifications(Web-Sockets)
 
 ## Tech Stack
 
@@ -379,25 +378,3 @@ Error response example:
   "statusCode": 404
 }
 ```
-
-## Deployment
-
-### Build for production
-
-```bash
-npm run build
-# or
-yarn build
-```
-
-### Start production server
-
-```bash
-npm start
-# or
-yarn start
-```
-
-## License
-
-MIT
